@@ -1,0 +1,63 @@
+<!-- Navigation Component -->
+<nav class="fixed w-full z-40 bg-white/30 backdrop-blur-xl border-b border-white/20 dark:bg-neutral-900/60 dark:border-neutral-800 transition">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+  
+        <!-- Logo -->
+        <a class="flex items-center gap-3" href="index.html">
+          <div class="w-8 h-8 bg-accent rounded-md flex items-center justify-center text-white font-bold">BB</div>
+          <span class="font-medium text-neutral-900 dark:text-white">Brick Byte</span>
+        </a>
+  
+        <div class="flex items-center gap-6">
+          
+          <!-- Desktop Theme Toggle -->
+          <button id="theme-toggle" class="text-2xl text-neutral-900 dark:text-white hover:text-accent transition">
+            <i data-feather="moon"></i>
+          </button>
+  
+          <!-- Mobile Menu Button -->
+          <button id="mobileMenuBtn" class="md:hidden text-3xl text-neutral-900 dark:text-white">
+            <i data-feather="menu"></i>
+          </button>
+  
+          <!-- Desktop Nav Links -->
+          <div class="hidden md:flex gap-8 text-neutral-900 dark:text-white">
+            <a href="index.html#work" class="hover:text-accent transition">Work</a>
+            <a href="index.html#services" class="hover:text-accent transition">Services</a>
+            <a href="index.html#contact" class="hover:text-accent transition">Contact</a>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Mobile Drawer -->
+  <div id="mobileMenu"
+       class="fixed top-16 right-0 bottom-0 w-64 z-50
+              bg-white/30 dark:bg-neutral-900/60
+              backdrop-blur-xl border-l border-white/20 dark:border-neutral-800
+              transform translate-x-full
+              transition-transform duration-300 md:hidden">
+  
+    <div class="px-6 py-8 space-y-6 text-neutral-900 dark:text-white">
+  
+      <!-- Mobile links -->
+      <a href="index.html#work" class="block text-lg hover:text-accent transition">Work</a>
+      <a href="index.html#services" class="block text-lg hover:text-accent transition">Services</a>
+      <a href="index.html#contact" class="block text-lg hover:text-accent transition">Contact</a>
+  
+      <!-- CTA -->
+      <a href="index.html#contact"
+         class="block mt-4 px-4 py-2 bg-accent rounded-md text-white text-center">
+        Let's discuss
+      </a>
+  
+      <!-- Mobile Theme Toggle -->
+      <button id="mobile-theme-toggle" class="block text-lg mt-4">
+        <i data-feather="moon"></i>
+      </button>
+  
+    </div>
+  </div>

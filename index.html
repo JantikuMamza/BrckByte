@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Brck Byte - Digital Design Agency</title>
+
+  <!-- SEO & Social -->
+  <meta name="description" content="Brick Byte — digital design & development agency building pixel-perfect websites that convert.">
+  <meta property="og:title" content="Brick Byte - Digital Design Agency">
+  <meta property="og:description" content="We build modern websites and digital experiences for small businesses and startups.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?w=1200&amp;h=630&amp;fit=crop">
+  <meta name="twitter:card" content="summary_large_image">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png" />
+<link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+<link rel="shortcut icon" href="favicon/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+<link rel="manifest" href="favicon/site.webmanifest" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#ffffff',
+            secondary: '#525252',
+            accent: '#3b82f6'
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Feather Icons -->
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="bg-neutral-900 text-primary antialiased">
+
+ <!-- NAV -->
+  <div id="nav-placeholder"></div>
+
+<!-- HERO -->
+<section id="home" class="pt-32 pb-20">
+  <!-- Text content in constrained container -->
+  <div class="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center">
+    <h1 class="text-5xl md:text-7xl font-display font-bold tracking-tight">
+      Building <span class="gradient-text">digital experiences</span><br>that matter
+    </h1>
+
+    <p class="mt-6 text-xl text-secondary max-w-3xl mx-auto">
+      We design & develop pixel-perfect websites that convert visitors into customers.
+    </p>
+  </div>
+
+  <!-- HERO IMAGE + BUTTONS (full width) -->
+  <div class="mt-20 w-full">
+    <div class="relative w-full aspect-video overflow-hidden">
+
+      <!-- CTA BUTTONS -->
+      <div class="absolute inset-0 flex items-center justify-center gap-4 z-20">
+
+        <!-- Primary Button -->
+        <a href="#contact"
+           class="px-8 py-3 rounded-md font-semibold
+                  bg-white text-neutral-900
+                  shadow-md
+                  transition-all duration-200 ease-out
+                  hover:shadow-lg hover:-translate-y-1 hover:scale-[1.03]
+                  active:scale-[0.97]">
+          Start Your Project
+        </a>
+
+        <!-- Secondary Button -->
+        <a href="portfolio.html"
+           class="px-8 py-3 rounded-md font-semibold
+                  bg-white/90 backdrop-blur-sm
+                  border border-black text-black
+                  dark:bg-black/90 dark:backdrop-blur-sm
+                  dark:border-white dark:text-white
+                  hover:bg-black hover:text-white
+                  dark:hover:bg-white dark:hover:text-black
+                  transition-all duration-200 ease-out
+                  hover:-translate-y-1 hover:scale-[1.03]
+                  active:scale-[0.97]">
+          View Our Work
+        </a>
+
+      </div>
+
+      <!-- HERO IMAGE -->
+      <img 
+        src="https://static.photos/technology/1200x630/24" 
+        alt="Digital design workspace" 
+        class="w-full h-full object-cover">
+
+      <!-- DARK OVERLAY -->
+      <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+    </div>
+  </div>
+</section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto bg-neutral-800 rounded-3xl">
+    <div class="text-center">
+      <span class="text-accent font-medium">WHAT WE OFFER</span>
+      <h2 class="text-4xl font-display font-bold mt-2">Services that build success</h2>
+      <p class="mt-4 text-secondary max-w-2xl mx-auto">
+        From initial concept to final launch, we provide comprehensive digital solutions tailored to your business needs.
+      </p>
+    </div>
+    <div class="mt-16 grid md:grid-cols-3 gap-8">
+      <!-- Service 1 -->
+      <div class="service-card bg-neutral-900 rounded-xl px-6 py-8 flex flex-col items-center text-center transition-all duration-300 hover:-translate-y-2 hover:border hover:border-accent">
+        <img src="https://static.photos/technology/200x200/165.webp" alt="UI/UX Design placeholder" class="w-12 h-12 rounded-lg object-cover bg-neutral-800 mb-3" />
+        <h3 class="font-bold font-display text-lg mt-2">UI/UX Design</h3>
+        <p class="mt-2 text-secondary">
+          Beautiful, intuitive interfaces designed for maximum engagement and conversions.
+        </p>
+        <a href="#contact" class="mt-4 text-accent font-medium hover:underline inline-flex items-center">
+          Learn more
+          <i data-feather="arrow-right" class="ml-1 w-4 h-4"></i>
+        </a>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="service-card bg-neutral-900 rounded-xl px-6 py-8 flex flex-col items-center text-center transition-all duration-300 hover:-translate-y-2 hover:border hover:border-accent">
+        <img src="https://static.photos/construction/200x200/129" alt="Web development placeholder" class="w-12 h-12 rounded-lg object-cover bg-neutral-800 mb-3" />
+        <h3 class="font-bold font-display text-lg mt-2">Web Development</h3>
+        <p class="mt-2 text-secondary">
+          Custom-built websites with clean code, blazing speed, and seamless functionality.
+        </p>
+        <a href="#contact" class="mt-4 text-accent font-medium hover:underline inline-flex items-center">
+          Learn more
+          <i data-feather="arrow-right" class="ml-1 w-4 h-4"></i>
+        </a>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="service-card bg-neutral-900 rounded-xl px-6 py-8 flex flex-col items-center text-center transition-all duration-300 hover:-translate-y-2 hover:border hover:border-accent">
+        <img src="https://static.photos/aerial/200x200/167.webp" alt="Digital Strategy placeholder" class="w-12 h-12 rounded-lg object-cover bg-neutral-800 mb-3" />
+        <h3 class="font-bold font-display text-lg mt-2">Digital Strategy</h3>
+        <p class="mt-2 text-secondary">
+          Data-driven plans to maximize your online presence and business growth.
+        </p>
+        <a href="#contact" class="mt-4 text-accent font-medium hover:underline inline-flex items-center">
+          Learn more
+          <i data-feather="arrow-right" class="ml-1 w-4 h-4"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Preview -->
+  <section id="work" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div class="text-center">
+      <span class="text-accent font-medium">OUR WORK</span>
+      <h2 class="text-4xl font-display font-bold mt-2">Projects we're proud of</h2>
+      <p class="mt-4 text-secondary max-w-2xl mx-auto">
+        Each project represents our commitment to quality, innovation, and client success.
+      </p>
+    </div>
+  
+    <div class="mt-16 grid md:grid-cols-2 gap-8">
+      <!-- Project 1 -->
+      <a
+        href="https://huggingface.co/spaces/Jantiku/stitchcraft-couture-co"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="View Stitch Couture project"
+        class="block focus:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-2xl"
+      >
+        <div class="relative group overflow-hidden rounded-2xl aspect-video">
+          <img
+            src="https://static.photos/technology/1200x630/154"
+            alt="Minimal portfolio website"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-neutral-900/70 via-neutral-900/30 to-transparent flex items-end p-8"
+          >
+            <div>
+              <h3 class="text-2xl font-display font-bold text-white">Stitch Couture</h3>
+              <p class="mt-1 text-neutral-100">
+                Minimal portfolio for creative professionals
+              </p>
+            </div>
+          </div>
+        </div>
+      </a>
+  
+      <!-- Project 2 -->
+      <div class="relative group overflow-hidden rounded-2xl aspect-video">
+        <img
+          src="https://static.photos/sport/640x360/159"
+          alt="Football lifestyle apparel website"
+          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+        />
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-neutral-900/70 via-neutral-900/30 to-transparent flex items-end p-8"
+        >
+          <div>
+            <h3 class="text-2xl font-display font-bold text-white">Alki FC</h3>
+            <p class="mt-1 text-neutral-100">Football lifestyle apparel</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="mt-8 text-center">
+      <a
+        href="portfolio.html"
+        class="inline-flex items-center text-accent font-medium hover:underline">
+        View all projects
+        <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+      </a>
+    </div>
+  </section>
+  
+  <!-- Testimonials -->
+  <section class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto bg-neutral-800 rounded-3xl">
+    <div class="text-center">
+      <span class="text-accent font-medium">CLIENT LOVE</span>
+      <h2 class="text-4xl font-display font-bold mt-2">What our clients say</h2>
+    </div>
+  
+    <div class="mt-16 grid md:grid-cols-3 gap-8">
+      <!-- Testimonial 1 -->
+      <div class="testimonial-card bg-neutral-900 p-8 rounded-2xl border border-neutral-700 transition-transform duration-300 hover:-translate-y-2 hover:border-accent">
+        <div class="flex items-center">
+          <div class="w-12 h-12 rounded-full overflow-hidden">
+            <img
+              src="https://static.photos/people/200x200/1"
+              alt="Client photo"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="ml-4">
+            <h4 class="font-medium">Jan Mamza</h4>
+            <p class="text-sm text-secondary">Lead Software Engineer, Brck Byte</p>
+          </div>
+        </div>
+        <p class="mt-6 text-secondary">
+          "Brick Byte transformed our online presence completely. Our attention
+          to detail and understanding of the brand was exceptional."
+        </p>
+      </div>
+  
+      <!-- Testimonial 2 -->
+      <div class="testimonial-card bg-neutral-900 p-8 rounded-2xl border border-neutral-700 transition-transform duration-300 hover:-translate-y-2 hover:border-accent">
+        <div class="flex items-center">
+          <div class="w-12 h-12 rounded-full overflow-hidden">
+            <img
+              src="https://static.photos/sport/200x200/147"
+              alt="Client photo"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="ml-4">
+            <h4 class="font-medium">Jia VJ</h4>
+            <p class="text-sm text-secondary">Founder, Bee-ber</p>
+          </div>
+        </div>
+        <p class="mt-6 text-secondary">
+          "The team delivered beyond expectations. Our website traffic increased
+          by 300% post-launch. Unmatched expertise!"
+        </p>
+      </div>
+  
+      <!-- Testimonial 3 -->
+      <div class="testimonial-card bg-neutral-900 p-8 rounded-2xl border border-neutral-700 transition-transform duration-300 hover:-translate-y-2 hover:border-accent">
+        <div class="flex items-center">
+          <div class="w-12 h-12 rounded-full overflow-hidden">
+            <img
+              src="https://static.photos/sport/200x200/3"
+              alt="Client photo"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="ml-4">
+            <h4 class="font-medium">Alki Kigas</h4>
+            <p class="text-sm text-secondary">Founder Alki FC</p>
+          </div>
+        </div>
+        <p class="mt-6 text-secondary">
+          "Working with Brick Byte was seamless. They understood my vision
+          immediately and executed it perfectly."
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- CTA Section -->
+  <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div class="bg-neutral-800 rounded-3xl p-12 text-center text-white">
+      <h2 class="text-3xl md:text-4xl font-display font-bold max-w-2xl mx-auto">
+        Ready to transform your digital presence?
+      </h2>
+      <p class="mt-6 text-secondary max-w-xl mx-auto">
+        Fill out the quick form below - we'll get in touch to discuss your project!
+      </p>
+  
+      <!-- Formspree contact form -->
+      <form
+        id="contact-form"
+        action="https://formspree.io/f/xzzjowrk"
+        method="POST"
+        class="mt-8 max-w-md mx-auto space-y-4 text-left"
+      >
+        <div>
+          <label for="name" class="block text-sm font-medium mb-1">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            class="w-full px-4 py-2 rounded-md border border-gray-300 text-black focus:ring-blue-500 focus:border-blue-500"
+          />
+        </div>
+  
+        <div>
+          <label for="email" class="block text-sm font-medium mb-1">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            class="w-full px-4 py-2 rounded-md border border-gray-300 text-black focus:ring-blue-500 focus:border-blue-500"
+          />
+        </div>
+  
+        <div>
+          <label for="message" class="block text-sm font-medium mb-1">Your Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            required
+            class="w-full px-4 py-2 rounded-md border border-gray-300 text-black focus:ring-blue-500 focus:border-blue-500"
+          ></textarea>
+        </div>
+  
+        <!-- Success message -->
+        <p id="form-status" class="text-green-400 font-medium hidden">
+          Thanks! Your message has been sent.
+        </p>
+  
+        <button
+          type="submit"
+          class="mt-4 px-8 py-3 bg-accent text-white font-semibold rounded-xl shadow-md hover:bg-blue-700 transition-colors duration-200"
+        >
+          Send Message
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-neutral-800">
+    <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 bg-accent rounded-md flex items-center justify-center text-white font-bold">BB</div>
+        <span class="font-medium">Brck Byte</span>
+      </div>
+
+      <!-- Quick Links Section -->
+      <div class="flex flex-col md:flex-row items-center gap-2 md:gap-6">
+        <a href="#work" class="text-secondary text-sm hover:text-accent transition-colors">Work</a>
+        <a href="#services" class="text-secondary text-sm hover:text-accent transition-colors">Services</a>
+        <a href="#contact" class="text-secondary text-sm hover:text-accent transition-colors">Contact</a>
+      </div>
+
+      <div class="flex items-center gap-6">
+        <p class="text-secondary text-sm">© <span id="year">2025</span> Brck Byte. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="main.js"></script>
+</body>
+</html>

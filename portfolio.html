@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio - Brick Byte</title>
+  <link rel="icon" type="image/png" href="favicon-32x32.png" />
+
+
+  <meta name="description" content="Explore Brick Byte’s portfolio of digital design and web development projects." />
+  <meta property="og:title" content="Portfolio - Brick Byte" />
+  <meta property="og:description" content="A showcase of our creative digital projects and web experiences." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?w=1200&h=630&fit=crop" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Favicon -->
+<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png" />
+<link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+<link rel="shortcut icon" href="favicon/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+<link rel="manifest" href="favicon/site.webmanifest" />
+
+  <!-- Fonts & Tailwind -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#ffffff',
+            secondary: '#525252',
+            accent: '#3b82f6'
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Feather Icons -->
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="bg-neutral-900 text-primary antialiased">
+
+  <!-- NAV -->
+  <div id="nav-placeholder"></div>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div class="text-center">
+      <span class="text-accent font-medium">OUR PORTFOLIO</span>
+      <h1 class="text-5xl font-display font-bold mt-2">Projects We’ve Brought to Life</h1>
+      <p class="mt-4 text-secondary max-w-2xl mx-auto">
+        A collection of our favorite projects that showcase creativity, strategy, and technical craftsmanship.
+      </p>
+    </div>
+
+    <div class="mt-16 grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+      <!-- Project 1 -->
+      <div class="project-card group">
+        <img src="http://static.photos/people/640x360/151" alt="Brand Identity Design" class="project-img group-hover:scale-105 transition-transform duration-500" />
+        <div class="project-overlay">
+          <div>
+            <h3 class="text-2xl font-display font-bold text-white">Brand Identity Design</h3>
+            <p class="text-white/90 mt-1">A modern logo and visual identity project for a clothing startup.</p>
+            <a href="#" class="inline-block mt-3 text-accent font-medium hover:underline">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card group">
+        <img src="http://static.photos/technology/640x360/154" alt="Stitch Craft Couture" class="project-img group-hover:scale-105 transition-transform duration-500" />
+        <div class="project-overlay">
+          <div>
+            <h3 class="text-2xl font-display font-bold text-white">Stitch Craft Couture</h3>
+            <p class="text-white/90 mt-1">A responsive online store built using HTML, CSS, and JavaScript.</p>
+            <a href="#" class="inline-block mt-3 text-accent font-medium hover:underline">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card group">
+        <img src="https://static.photos/industry/640x360/142" alt="Marketing Landing Page" class="project-img group-hover:scale-105 transition-transform duration-500" />
+        <div class="project-overlay">
+          <div>
+            <h3 class="text-2xl font-display font-bold text-white">Marketing Landing Page</h3>
+            <p class="text-white/90 mt-1">A promotional site designed to boost conversions.</p>
+            <a href="#" class="inline-block mt-3 text-accent font-medium hover:underline">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project-card group">
+        <img src="https://static.photos/office/640x360/161" alt="Portfolio Redesign" class="project-img group-hover:scale-105 transition-transform duration-500" />
+        <div class="project-overlay">
+          <div>
+            <h3 class="text-2xl font-display font-bold text-white">Portfolio Redesign</h3>
+            <p class="text-white/90 mt-1">A sleek personal portfolio showcasing creative work.</p>
+            <a href="#" class="inline-block mt-3 text-accent font-medium hover:underline">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="project-card group">
+        <img src="https://static.photos/technology/640x360/122" alt="Simplify IT Services" class="project-img group-hover:scale-105 transition-transform duration-500" />
+        <div class="project-overlay">
+          <div>
+            <h3 class="text-2xl font-display font-bold text-white">Simplify IT Services</h3>
+            <p class="text-white/90 mt-1">A business website for an Australian IT startup.</p>
+            <a href="#" class="inline-block mt-3 text-accent font-medium hover:underline">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="project-card group">
+        <img src="https://static.photos/sport/640x360/159" alt="Alki FC Apparel" class="project-img group-hover:scale-105 transition-transform duration-500" />
+        <div class="project-overlay">
+          <div>
+            <h3 class="text-2xl font-display font-bold text-white">Alki FC Apparel</h3>
+            <p class="text-white/90 mt-1">A football-inspired lifestyle brand landing page.</p>
+            <a href="https://alkifootballfc.netlify.app/" class="inline-block mt-3 text-accent font-medium hover:underline" target="_blank" rel="noopener">View Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div class="bg-neutral-800 rounded-3xl p-12 text-center text-white">
+      <h2 class="text-3xl md:text-4xl font-display font-bold max-w-2xl mx-auto">
+        Ready to collaborate on your next big project?
+      </h2>
+      <p class="mt-6 text-secondary max-w-xl mx-auto">
+        Let’s bring your vision to life. Get in touch today to start your project with Brick Byte.
+      </p>
+      <a href="index.html#contact" class="mt-8 inline-block px-8 py-3 bg-accent rounded-xl text-white font-semibold hover:bg-blue-700 transition">
+        Get in Touch
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-neutral-800">
+    <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 bg-accent rounded-md flex items-center justify-center text-white font-bold">BB</div>
+        <span class="font-medium">Brick Byte</span>
+      </div>
+
+      <div class="flex flex-col md:flex-row items-center gap-2 md:gap-6">
+        <a href="index.html#work" class="text-secondary text-sm hover:text-accent transition">Work</a>
+        <a href="index.html#services" class="text-secondary text-sm hover:text-accent transition">Services</a>
+        <a href="index.html#contact" class="text-secondary text-sm hover:text-accent transition">Contact</a>
+      </div>
+
+      <p class="text-secondary text-sm">© <span id="year">2025</span> Brick Byte. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="main.js"></script>
+</body>
+</html>
